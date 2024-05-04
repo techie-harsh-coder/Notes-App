@@ -15,7 +15,7 @@ const ToDo1 = () => {
     setTimeout(() => {
       localStorage.setItem("todos", JSON.stringify(todos));
       localStorage.setItem("count", count);
-    });
+    }, 1000);
   }, [todos]);
 
   const handleOnClickAdd = () => {
