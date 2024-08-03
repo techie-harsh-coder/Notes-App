@@ -57,7 +57,7 @@ const ToDo1 = () => {
         </div>
 
         <ul className="grid grid-cols-3 gap-3 m-auto w-3/4">
-          {todos.map((item, index) => (
+          {Array.isArray(todos) && todos.map((item, index) => (
             <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <p className="mb-3 font-normal text-white" key={index}>
                 {item}
